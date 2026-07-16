@@ -1,5 +1,10 @@
 # nessus-export
 
+[![CI](https://github.com/setuidloot/nessus-export/actions/workflows/ci.yml/badge.svg)](https://github.com/setuidloot/nessus-export/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/nessus-export.svg)](https://pypi.org/project/nessus-export/)
+[![Python](https://img.shields.io/pypi/pyversions/nessus-export.svg)](https://pypi.org/project/nessus-export/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Export [Nessus](https://www.tenable.com/products/nessus) scan results from the
 command line via the REST API — **with an automatic fallback that reconstructs a
 valid `.nessus` file even when the server's native export is locked** (as it is
@@ -38,6 +43,12 @@ The reconstructed `.nessus` imports cleanly back into Nessus and into anything
 else that consumes the format (parsers, dashboards, DefectDojo, etc.).
 
 ## Install
+
+```bash
+pip install nessus-export
+```
+
+Or from source:
 
 ```bash
 git clone https://github.com/setuidloot/nessus-export
